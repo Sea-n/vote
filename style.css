@@ -1,0 +1,32 @@
+header.ts.fluid.vertically.padded.heading.slate {
+    font-size: 1.7em !important;
+    color: #646464 !important;
+    padding: 1.8em 2em 3em !important;
+	line-height: 1.6;
+}
+
+header.ts.fluid.vertically.padded.heading.slate+.ts.container {
+    margin-top: 2em !important;
+}
+
+header .header {
+	color: #404040;
+}
+
+.photo-credit {
+	position: absolute;
+	bottom: 15px;
+	right: 15px;
+	color: white;
+	text-shadow: 1px 1px 2px black;
+	text-align: right;
+}
+
+.photo-credit a {
+	color: white;
+	text-decoration: underline;
+}
+
+.attached.buttons {
+	display: none;
+}
