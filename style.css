@@ -13,6 +13,11 @@ header .header {
 	color: #404040;
 }
 
+.proposal {
+	font-size: larger;
+	font-weight: bold;
+}
+
 .photo-credit {
 	position: absolute;
 	bottom: 15px;

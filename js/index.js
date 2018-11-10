@@ -14,10 +14,13 @@ function resize() {
 		list2.classList.add("four");
 	}
 
-	var steps = document.getElementById("steps");
-	steps.classList.remove("vertical")
+	var steps1 = document.getElementById("steps18");
+	var steps2 = document.getElementById("steps20");
+	steps1.classList.remove("vertical")
+	steps2.classList.remove("vertical")
 	if (window.innerWidth < 1200) {
-		steps.classList.add("vertical")
+		steps1.classList.add("vertical")
+		steps2.classList.add("vertical")
 	}
 }
 
