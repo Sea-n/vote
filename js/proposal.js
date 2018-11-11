@@ -27,3 +27,10 @@ function resize() {
 }
 
 resize(); // init
+
+if (document.referrer.match(/https:\/\/sean\.cat\/vote\/(\?.*)/)) {
+	document.getElementById("home").onclick = () => {
+		history.back();
+		return false;
+	}
+}
