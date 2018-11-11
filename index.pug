@@ -12,11 +12,16 @@ html
 		link(rel="icon" type="image/png" href="https://www.sean.taipei/logo-16.png" sizes="16x16")
 		meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no")
 		meta(name="keywords" content="公投指南, 懶人包")
-		meta(name="description" content="許下一代一個更好的台灣")
+		meta(name="description" content="許台灣一個更美好的未來")
 		meta(property="og:title" content="公投指南")
 		meta(property="og:url" content="https://sean.cat/vote/")
+		meta(property="og:image" content="https://sean.cat/vote/img/cover14.jpg")
+		meta(property="og:image:secure_url" content="https://sean.cat/vote/img/cover14.jpg")
+		meta(property="og:image:type" content="image/jpeg")
+		meta(property="og:image:width" content="1024")
+		meta(property="og:image:height" content="683")
 		meta(property="og:type" content="website")
-		meta(property="og:description" content="許下一代一個更好的台灣")
+		meta(property="og:description" content="許台灣一個更美好的未來")
 		meta(property="og:site_name" content="Sean's Website")
 		meta(property="fb:app_id" content="1654538528156949")
 		link(href="/assets/css/tocas-ui/tocas.css" rel="stylesheet")
@@ -42,7 +47,7 @@ html
 					div.image
 						img.cover(src="img/cover7.jpg")
 						p.photo-credit Photo Credit: 
-							a(target="_blank" href="https://commons.wikimedia.org/wiki/File:A_thermal_power_plant_in_Lengshuijiang,_Hunan,_picture3.jpg") Wiki Commons
+							a(target="_blank" href="https://commons.wikimedia.org/wiki/File:A_thermal_power_plant_in_Lengshuijiang,_Hunan,_picture3.jpg" onclick="ga('send', 'event', 'Outgoing', 'cover7-credit', 'VOTE');") Wiki Commons
 					div.content
 						div.header 7. 反空汙
 						div.proposal.description 你是否同意以「平均每年至少降低 1%」之方式逐年降低火力發電廠發電量？
@@ -52,14 +57,14 @@ html
 					div.extra.content
 						div.description
 							p 支持者認為，火力發電是造成空汙的主要原因，而近來全台空汙問題日益嚴重，若依蔡政府廢核政策，勢必得再提高火力發電比。
-							p 反對方認為，一旦此公投案通過後，台電必定會優先減少高成本的天然氣發電，對於降低台中燃煤發電的汙染無太大助益，且反而造成民眾與企業對「限電」的恐慌。
+							p 反對方認為，一旦此公投案通過後，台電會優先減少高成本的天然氣發電，對於降低台中燃煤發電的汙染無太大助益，且反而造成民眾與企業對「限電」的恐慌。
 					div.ts.fluid.buttom.attached.buttons
 						a.ts.button(href="proposal7") 詳細內容
 				div.ts.card
 					div.image
 						img.cover(src="img/cover8.jpg")
 						p.photo-credit Photo Credit: 
-							a(target="_blank" href="https://commons.wikimedia.org/wiki/File:%E6%B7%B1%E6%BE%B3%E5%B2%AC%E8%A7%92%E8%88%87%E6%B7%B1%E6%BE%B3%E6%BC%81%E6%B8%AF.jpg") Wiki Commons
+							a(target="_blank" href="https://commons.wikimedia.org/wiki/File:%E6%B7%B1%E6%BE%B3%E5%B2%AC%E8%A7%92%E8%88%87%E6%B7%B1%E6%BE%B3%E6%BC%81%E6%B8%AF.jpg" onclick="ga('send', 'event', 'Outgoing', 'cover8-credit', 'VOTE');") Wiki Commons
 					div.content
 						div.header 8. 反深澳電廠
 						div.proposal.description 你是否同意確立「停止新建、擴建任何燃煤發電廠或發電機組（包括深澳電廠擴建）」之能源政策？
@@ -68,15 +73,15 @@ html
 							| 領銜人：林德福
 					div.extra.content
 						div.description
-							p 行政院長已於 10/12 宣布，興建觀塘天然氣接收站後，未來發電有餘裕，因而停建深澳電廠。
-							p 深澳電廠已確定停建，此案無實際作用，僅能代表國民黨支持度。
+							p 支持者認為深澳電廠造成的空汙，將使呼吸道疾病惡化、提高肺癌風險，應將擴建斥資的 1000 億用於綠能建設。
+							p 反方認為能源政策須由專家做整體規劃，不該由人民公投草率決定。行政院長已於 10/12 宣布，興建觀塘天然氣接收站後，未來發電有餘裕，將停建深澳電廠。
 					div.ts.fluid.buttom.attached.buttons
 						a.ts.button(href="proposal8") 詳細內容
 				div.ts.card
 					div.image
 						img.cover(src="img/cover9.jpg")
 						p.photo-credit Photo Credit: 
-							a(target="_blank" href="https://pixabay.com/en/nuclear-waste-radioactive-trash-1471361/") Pixabay
+							a(target="_blank" href="https://pixabay.com/en/nuclear-waste-radioactive-trash-1471361/" onclick="ga('send', 'event', 'Outgoing', 'cover9-credit', 'VOTE');") Pixabay
 					div.content
 						div.header 9. 反日本核食
 						div.proposal.description 你是否同意政府維持禁止開放日本福島 311 核災相關地區，包括福島與周遭 4 縣市（茨城、櫪木、群馬、千葉）等地區農產品及食品進口？
@@ -109,7 +114,7 @@ html
 					div.image
 						img.cover(src="img/cover11.jpg")
 						p.photo-credit Photo Credit: 
-							a(target="_blank" href="https://pixabay.com/en/kids-painting-school-drawing-draw-2985782/") Pixabay
+							a(target="_blank" href="https://pixabay.com/en/kids-painting-school-drawing-draw-2985782/" onclick="ga('send', 'event', 'Outgoing', 'cover11-credit', 'VOTE');") Pixabay
 					div.content
 						div.header 11. 反性平教育
 						div.proposal.description 你是否同意在國民教育階段內（國中及國小），教育部及各級學校不應對學生實施性別平等教育法施行細則所定之同志教育？
@@ -143,7 +148,7 @@ html
 					div.image
 						img.cover(src="img/cover13.jpg")
 						p.photo-credit Photo Credit: 
-							a(target="_blank" href="https://www.facebook.com/2020teamtaiwan/photos/246833345895566/") 東奧正名後援會
+							a(target="_blank" href="https://www.facebook.com/2020teamtaiwan/photos/246833345895566/" onclick="ga('send', 'event', 'Outgoing', 'cover13-credit', 'VOTE');") 東奧正名後援會
 					div.content
 						div.header 13. 東奧正名
 						div.proposal.description 你是否同意，以「台灣」（Taiwan）為全名申請參加所有國際運動賽事及 2020 年東京奧運？
@@ -152,15 +157,17 @@ html
 							| 領銜人：紀政
 					div.extra.content
 						div.description
-							p 發起公投將督促政府，將台灣作為隊名的這個議題送交國際奧委會，而能不能改名需要國際奧委會投票表決，若通過我們就改名成功，若不通過因為公投決議對政府有約束力，政府就下屆繼續送。
-							p 反方認為若向國際奧會提出以「台灣」名義參加 2020 東京奧運，恐遭停權處分，過去台灣就曾被停權 12 年，等於犧牲運動員的未來。
+							p 送交以台灣為隊名的議題後，能否改名需由國際奧會表決。中華奧會雖持續傳出恐遭停權的謠言，實際上國際奧會無法因為走正式程序的申請而把台灣停權。公投決議不僅止於改名，結果本身就代表了台灣人的身份認同，是以正式程序向國際表態不認同中華台北稱呼的機會。
+							p 反方擔心若向國際奧會提出以台灣名義參加 2020 東京奧運，恐遭停權處分。由中華台北改名為台灣，而非使用中華民國，也不符合目前國名。
+								br
+								| *此案於中選會五場公投辯論均未派出反方
 					div.ts.fluid.buttom.attached.buttons
 						a.ts.button(href="proposal13") 詳細內容
 				div.ts.card
 					div.image
 						img.cover(src="img/cover14.jpg")
 						p.photo-credit Photo Credit: 
-							a(target="_blank" href="https://andylain.blogspot.com/") 安迪連碎碎念
+							a(target="_blank" href="https://andylain.blogspot.com/" onclick="ga('send', 'event', 'Outgoing', 'cover14-credit', 'VOTE');") 安迪連碎碎念
 					div.content
 						div.header 14. 民法保障同婚
 						div.proposal.description 你是否同意，以民法婚姻章保障同性別二人建立婚姻關係？
@@ -177,7 +184,7 @@ html
 					div.image
 						img.cover(src="img/cover15.jpg")
 						p.photo-credit Photo Credit: 
-							a(target="_blank" href="https://www.flickr.com/photos/daisuke1230/") 喵助影像
+							a(target="_blank" href="https://www.flickr.com/photos/daisuke1230/" onclick="ga('send', 'event', 'Outgoing', 'cover15-credit', 'VOTE');") 喵助影像
 					div.content
 						div.header 15. 落實性平教育
 						div.proposal.description 你是否同意，以「性別平等教育法」明定在國民教育各階段內實施性別平等教育，且內容應涵蓋情感教育、性教育、同志教育等課程？
@@ -194,7 +201,7 @@ html
 					div.image
 						img.cover(src="img/cover16.jpg")
 						p.photo-credit Photo Credit: 
-							a(target="_blank" href="https://pixabay.com/en/nuclear-power-plant-energy-2485746/") Pixabay
+							a(target="_blank" href="https://pixabay.com/en/nuclear-power-plant-energy-2485746/" onclick="ga('send', 'event', 'Outgoing', 'cover16-credit', 'VOTE');") Pixabay
 					div.content
 						div.header 16. 以核養綠
 						div.proposal.description 你是否同意：廢除電業法第 95 條第 1 項，即廢除「核能發電設備應於中華民國一百十四年以前，全部停止運轉」之條文？
@@ -203,10 +210,10 @@ html
 							| 領銜人：黃士修
 					div.extra.content
 						div.description
-							p 支持者稱核能是廣義的綠能，2017 年 815 停電為台灣缺電的警示，不應執著於 2025 年非核家園目標，贊同啟封核四。
+							p 正方認為以目前條件廢核，再生能源無法補上缺口，如 2017 年 815 停電為台灣缺電的警示，不應執著於 2025 年非核家園目標，否則勢必因依賴火力而造成更大污染。核能屬乾淨能源，產生的廢料若妥善處理，造成的危害將較太陽能小。使用低成本的核電，才有更多資源投入綠能發展。
 							p 反方認為，在經費有限的情況下，若是繼續發展核能，勢必排擠其他發電方式，特別是蓬勃發展中的再生能源。因此「養綠」，只是一種話術，核終社群所說的綠能，其實就是核能，未提及再生能源。也就是說，這是一個「以核養核」的連署公投案。
 					div.ts.fluid.buttom.attached.buttons
-						a.ts.button(href="proposal13") 詳細內容
+						a.ts.button(href="proposal16") 詳細內容
 			hr
 			h3 投票流程
 			h4 年滿 18 歲
@@ -215,7 +222,7 @@ html
 					div.content
 						div.title 領取公投票
 						div.description
-				div.active.step
+				div.step
 					div.content
 						div.title 投下您神聖的一票
 						div.description
@@ -232,7 +239,7 @@ html
 						div.title 領取公投票
 						div.description
 							| 請於離開前主動詢問領取
-				div.active.step
+				div.step
 					div.content
 						div.title 投下您神聖的一票
 						div.description
@@ -247,6 +254,13 @@ html
 				li
 					a(target="_blank" href="https://musou.tw/focuses/1534" onclick="ga('send', 'event', 'Outgoing', 'watchout', 'VOTE');") 沃草國會無雙
 				li
+					a(target="_blank" href="https://web.cec.gov.tw/central/cms/speechtable107" onclick="ga('send', 'event', 'Outgoing', 'cec', 'VOTE');") 中選會公投辯論時程、錄影存檔
+					ul
+						li
+							a(target="_blank" href="https://docs.google.com/document/d/1DLF-Kkz28obmF706anKj026ShvEo6bN2aEYMOCMa4ls/edit" onclick="ga('send', 'event', 'Outgoing', 'cec-script', 'VOTE');") 逐字稿
+				li
+					a(target="_blank" href="https://hackmd.io/c/Hk7SAIH6Q/" onclick="ga('send', 'event', 'Outgoing', 'bulletin', 'VOTE');") 公投公報電子書
+				li
 					a(target="_blank" href="https://tw.youcard.yahoo.com/cardstack/7a70dbe0-b66c-11e8-b669-3121daaf4a97/" onclick="ga('send', 'event', 'Outgoing', 'yahoo', 'VOTE');") Yahoo 懶人卡
 				li
 					a(target="_blank" href="https://zh.wikipedia.org/wiki/2018%E5%B9%B4%E4%B8%AD%E8%8F%AF%E6%B0%91%E5%9C%8B%E5%85%A8%E5%9C%8B%E6%80%A7%E5%85%AC%E6%B0%91%E6%8A%95%E7%A5%A8" onclick="ga('send', 'event', 'Outgoing', 'wiki', 'VOTE');") 維基百科
@@ -258,8 +272,10 @@ html
 			h4 Q3: 我覺得 XXX 案明顯是對的，何必放上反方意見呢
 			p 本站宗旨就是讓閱聽人自行思考，不偏袒任何一方，摘取正反雙方最有力的論述
 			h4 Q4: 對於 XXX 看法根本就沒這回事
-			p 本站團隊已致力於驗證各說法的可靠性，假如您還是發現了問題，麻煩不吝讓我們知道，填寫下方表單後將會儘速修改。
-			h4 Q5: 看完之後覺得親友轉傳的懶人包怪怪的，可以怎麼與他討論
+			p 本團隊已致力於驗證各說法的可靠性，假如您還是發現了問題，麻煩不吝讓我們知道，填寫下方表單後將會儘速修改。
+			h4 Q5: 怎麼跟我聽到的說法不同
+			p 這網站的目的不是要讓讀者具有出去跟人辯論的能力，只要先大略了解議題，別被公投小抄牽著鼻子走就夠了，故正反方均僅節錄最為有利的論述，如果您有更好的想法，同樣歡迎用下方表單提出建議。
+			h4 Q6: 看完之後覺得親友轉傳的小抄怪怪的，可以怎麼與他討論
 			p 請他再了解一次各案內容，不一定要說服對方，但至少請確認對方知道自己在做什麼。
 			p 歡迎直接點下面按鈕分享出去
 			div.addthis_inline_share_toolbox
@@ -272,8 +288,11 @@ html
 					a(target="_blank" href="mailto:vote@sean.cat" onclick="ga('send', 'event', 'Outgoing', 'Email', 'VOTE');") E-mail
 		footer.ts.fluid.slate
 			.ts.container
-				p 由 
+				p 網站本體由 
 					a(target="_blank" href="https://www.sean.taipei/" onclick="ga('send', 'event', 'Outgoing', 'About', 'VOTE');") Sean 韋詠祥
-					|  整理、製作
+					|  製作
+				p 本站資料自網路編輯而來，為促進公民討論，在法律許可範圍內本站內容以 
+					a(target="_blank" href="http://creativecommons.tw/cc0" onclick="ga('send', 'event', 'Outgoing', 'CC0', 'VOTE');") CC0
+					|  條款無條件釋出
 	script(src="js/index.js")
 	script(type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5be5b0552c0681c3")

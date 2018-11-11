@@ -1,3 +1,11 @@
+nav.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
 header.ts.fluid.vertically.padded.heading.slate {
     font-size: 1.7em !important;
     color: #646464 !important;
@@ -33,5 +41,5 @@ header .header {
 }
 
 .attached.buttons {
-	display: none;
+/*	display: none; */
 }
