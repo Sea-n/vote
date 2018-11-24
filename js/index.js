@@ -25,3 +25,32 @@ function resize() {
 }
 
 resize(); // init
+
+function update() {
+	var xhr = new XMLHttpRequest();
+	xhr.open('GET', 'data.json', false);
+	xhr.send(null);
+	var data = JSON.parse(xhr.response);
+
+	for (i=0; i<10; i++) {
+		var percent = data[i] / data[10] * 100;
+
+		document.getElementById("votes" + (i+7)).innerText = data[i];
+		document.getElementById("percent" + (i+7)).innerText = percent.toFixed(2) + "%";
+
+		var bar = document.getElementById("bar" + (i+7));
+		bar.style.width = data[i] / data[10] * 200 + "%";
+		if (percent < 20)
+			bar.classList.add("negative");
+		else if (percent < 30)
+			bar.parentElement.classList.add("active")
+		else
+			bar.classList.add("positive")
+	}
+
+	document.getElementById("bar").style.width = data[11] / data[12] * 100 + "%";
+	document.getElementById("count").innerText = "開票進度：" + data[11] + " / " + data[12] + " (將自動更新)";
+}
+
+setInterval(update, 10000);
+update();
