@@ -1,5 +1,14 @@
 window.onload = () => {
-	document.getElementById("countdown").innerHTML = Math.ceil((1543003200000 - new Date().getTime()) / 1000 / 60 / 60 / 24);
+	var cd = document.getElementById("countdown");
+	var end = new Date("Nov 24, 2019 16:00:00 UTC+8").getTime();
+	setInterval(() => {
+		var now = new Date().getTime();
+		var dist = (end - now) / 1000;
+		var hr = Math.floor((dist % (60 * 60 * 24)) / (60 * 60));
+		var min = Math.floor((dist % (60 * 60) / 60));
+		var sec = Math.floor(dist % 60);
+		cd.innerHTML = hr + ":" + min + ":" + sec;
+	}, 500);
 }
 
 window.addEventListener("scroll", function () {
@@ -17,6 +26,9 @@ window.addEventListener("scroll", function () {
 
 function resize() {
 	var opinions = document.getElementById("opinions");
+	opinions.classList.add("one");
+	return;
+
 	opinions.classList.remove("one", "two", "three");
 	if (window.innerWidth < 540)
 		opinions.classList.add("one");
@@ -28,7 +40,7 @@ function resize() {
 
 resize(); // init
 
-if (document.referrer.match(/https:\/\/sean\.cat\/vote\/(\?.*)/)) {
+if (document.referrer.match(/https:\/\/sean\.cat\/vote\/(\?.*)?/)) {
 	document.getElementById("home").onclick = () => {
 		history.back();
 		return false;
