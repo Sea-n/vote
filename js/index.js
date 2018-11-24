@@ -25,30 +25,3 @@ function resize() {
 }
 
 resize(); // init
-
-
-window.addEventListener("scroll", function () {
-    var nav = document.getElementsByTagName("nav")[0];
-    var body = document.getElementsByTagName("body")[0];
-    if (window.scrollY > 200) {
-        nav.classList.add("fixed");
-        body.style.top = "40px";
-    }
-    if (window.scrollY < 20) {
-        nav.classList.remove("fixed");
-        body.style.top = "0px";
-    }
-});
-
-window.onload = () => {
-	var cd = document.getElementById("countdown");
-	var end = new Date("Nov 24, 2019 16:00:00 UTC+8").getTime();
-	setInterval(() => {
-		var now = new Date().getTime();
-		var dist = (end - now) / 1000;
-		var hr = Math.floor((dist % (60 * 60 * 24)) / (60 * 60));
-		var min = Math.floor((dist % (60 * 60) / 60));
-		var sec = Math.floor(dist % 60);
-		cd.innerHTML = hr + ":" + min + ":" + sec;
-	}, 500);
-}
