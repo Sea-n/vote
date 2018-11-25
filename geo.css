@@ -1,0 +1,39 @@
+path {
+	stroke-linejoin: round;
+}
+
+.land-glow {
+	fill-opacity: .2;
+	filter: url(#blur);
+	fill: #1e1e1e;
+}
+
+.land-fill {
+	fill-opacity: 0;
+	stroke: rgb(70, 70, 70);
+	stroke-width: .35px;
+}
+
+.region {
+	stroke: rgb(70, 70, 70);
+	stroke-width: 0.01rem;
+}
+
+.label-bg {
+	pointer-events: none;
+	text-anchor: middle;
+	fill: none;
+	stroke: white;
+	font-size: 0.9rem;
+	stroke-width: 0.2rem;
+	opacity: 0.9;
+}
+
+.label {
+	z-index: 10;
+	pointer-events: none;
+	text-anchor: middle;
+	font-size: 0.9rem;
+	text-shadow: 0 0 3px #fff;
+	fill: rgb(70, 70, 70);
+}

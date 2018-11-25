@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>開票分佈 - 公投指南</title>
+    <link rel="mask-icon" sizes="any" href="https://www.sean.taipei/logo.svg">
+    <link rel="icon" type="image/png" href="https://www.sean.taipei/logo-192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="https://www.sean.taipei/logo-128.png" sizes="128x128">
+    <link rel="icon" type="image/png" href="https://www.sean.taipei/logo-96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="https://www.sean.taipei/logo-64.png" sizes="64x64">
+    <link rel="icon" type="image/png" href="https://www.sean.taipei/logo-32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://www.sean.taipei/logo-16.png" sizes="16x16">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="keywords" content="公投指南, 懶人包">
+    <meta name="description" content="許台灣一個更美好的未來">
+    <meta property="og:title" content="公投指南">
+    <meta property="og:url" content="https://sean.cat/vote/">
+    <meta property="og:image" content="https://sean.cat/vote/img/cover14.jpg">
+    <meta property="og:image:secure_url" content="https://sean.cat/vote/img/cover14.jpg">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="683">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="許台灣一個更美好的未來">
+    <meta property="og:site_name" content="Sean's Website">
+    <meta property="fb:app_id" content="1654538528156949">
+    <link href="/assets/css/tocas-ui/tocas.css" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
+    <link href="./geo.css" rel="stylesheet">
+  <script src="https://d3js.org/d3.v3.min.js"></script>
+  <script src="https://d3js.org/d3.geo.projection.v0.min.js"></script>
+  <script src="https://d3js.org/topojson.v1.min.js"></script>
+  <script src="js/geo.js"></script>
+    <!-- Google Analytics-->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)
+      },i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-100002738-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <!-- End Google Analytics-->
+  </head>
+  <body onresize="resize()">
+</head>
+
+<body>
+    <nav class="ts basic fluid borderless menu horizontally scrollable">
+      <div class="ts container"><a class="item" id="home" href=".">回各案列表</a></div>
+    </nav>
+<div class="ts container">
+	<h1>開票分佈</h1>
+	<p>以各縣市為單位，視覺話公投同意比率</p>
+<h2>詳細資訊</h2>
+<big><a target="_blank" href="https://sciuridae0603.github.io/referendum2018/" onclick="ga('send', 'event', 'Outgoing', 'sciuridae', 'VOTE');">公投地圖</a></big>
+<hr>
+	<select id="case_selector" title="民國107年全國性公民投票案列表" class="sele-opt" style="margin-top:6px" onchange="gen(this.options[this.options.selectedIndex].value)"><option value="7">第7案(盧秀燕領銜)</option><option value="8">第8案(林德福領銜)</option><option value="9">第9案(郝龍斌領銜)</option><option value="10">第10案(游信義領銜)</option><option value="11">第11案(曾獻瑩領銜)</option><option value="12">第12案(曾獻瑩領銜)</option><option value="13" selected>第13案(紀政領銜)</option><option value="14">第14案(苗博雅領銜)</option><option value="15">第15案(王鼎棫領銜)</option><option value="16">第16案(黃士修領銜)</option></select>
+<br>
+<div style="max-width: 100%;"><svg></svg></div>
+</div>
+
+<script type="text/javascript">
+gen(13);
+  </script>
+</body>
+
+</html>
